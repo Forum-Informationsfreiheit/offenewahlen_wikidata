@@ -1,0 +1,13 @@
+venv
+*.pyc
+includes
+.project
+*.pyo
+*~
+*.db
+notes.md
+staticfiles
+.env
+*.sublime-project
+*.sublime-workspace
+

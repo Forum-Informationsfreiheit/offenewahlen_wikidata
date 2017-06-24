@@ -62,6 +62,9 @@ Danach werden die Daten mittels eines Python Scripts automatisch in Wikidata imp
 	- [Politiker](https://www.wikidata.org/wiki/Q82955) (Q82955)
 - [Parlaments-ID Österreich](https://www.wikidata.org/wiki/Property:P2280) (P2280): ID in der Datenbank "Wer ist Wer", geführt vom Österreichischen Parlament
 - [kandidiert(e) für](https://www.wikidata.org/wiki/Property:P3602) (P3602)
+- [Amtsbezeichnung des Staatsoberhaupts](https://www.wikidata.org/wiki/Property:P1906) (P1906)
+- [Amtsinhaber](https://www.wikidata.org/wiki/Property:P1308) (P1308)
+- [Leiter der Regierung oder Verwaltung](https://www.wikidata.org/wiki/Property:P6) (P6)
 - Wikipedia Seite mit Link (de)
 
 **Beispiele**
@@ -72,12 +75,15 @@ Danach werden die Daten mittels eines Python Scripts automatisch in Wikidata imp
 - [Angela Merkel](https://www.wikidata.org/wiki/Q567)
 
 
-**[Wikidata:EveryPolitician](https://www.wikidata.org/w/index.php?title=Wikidata:EveryPolitician)**
-- [Wikidata:EveryPolitician/Report:P6](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P6)
-- [Wikidata:EveryPolitician/Report:P1313/P1308](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P1308)
-- [Wikidata:EveryPolitician/Report:P39/Q2285706](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P39/Q2285706)
-- [Wikidata:EveryPolitician/Contrast Report:Head of Government](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Contrast_Report:Head_of_Government)
-- [Wikidata:EveryPolitician/Report:P1313/P39](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P39)
+**Projects**
+- [Wikidata:WikiProject Politics infoboxes](https://www.wikidata.org/wiki/Wikidata:WikiProject_Politics_infoboxes)
+- [Wikidata:WikiProject Heads of state and government](https://www.wikidata.org/wiki/Wikidata:WikiProject_Heads_of_state_and_government)	
+- [Wikidata:EveryPolitician](https://www.wikidata.org/w/index.php?title=Wikidata:EveryPolitician)**
+	- [Wikidata:EveryPolitician/Report:P6](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P6)
+	- [Wikidata:EveryPolitician/Report:P1313/P1308](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P1308)
+	- [Wikidata:EveryPolitician/Report:P39/Q2285706](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P39/Q2285706)
+	- [Wikidata:EveryPolitician/Contrast Report:Head of Government](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Contrast_Report:Head_of_Government)
+	- [Wikidata:EveryPolitician/Report:P1313/P39](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P39)
 	
 
 **Abfragen**
@@ -97,6 +103,41 @@ SELECT ?item ?itemLabel
 WHERE {
   ?item wdt:P39 wd:Q17535155;
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+```
+
+```
+# show birthplaces of current members of the austrian national council on a map
+#defaultView:Map
+SELECT ?place ?placeLabel ?personLabel ?coords WHERE {
+  ?person p:P39 ?statement. # person holds position <statement>
+  ?statement ps:P39 wd:Q17535155. # the position is being member of the European Parliament
+  ?statement pq:P580 ?starttime. # the position has a start time...
+  FILTER NOT EXISTS {?statement pq:P582 ?endtime} # ... but no end time
+  ?person wdt:P19 ?place. # person is born in place
+  ?place wdt:P625 ?coords. # the place's coordinates
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+```
+
+# visualize the genders of Austrian mayors on a map
+#defaultView:Map
+SELECT ?cityLabel ?coords ?headLabel (?genderLabel as ?layer)
+WHERE {
+  ?city wdt:P6 ?head. # head of government of city
+  ?city wdt:P17 wd:Q40. # city in Austria
+  ?city wdt:P625 ?coords. # city's coordinates
+  ?head wdt:P21 ?gender. # head's gender
+  
+  # tell the labelling service explicitly which labels to apply
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+    ?city rdfs:label ?cityLabel.
+    ?head rdfs:label ?headLabel.
+    ?gender rdfs:label ?genderLabel.
+  }
 }
 ```
 
@@ -126,6 +167,7 @@ WHERE {
 - [Logo](https://www.wikidata.org/wiki/Property:P154) (P154)
 - [Amt des Leiters](https://www.wikidata.org/wiki/Property:P2388) (P2388)
 - [Vorsitzender](https://www.wikidata.org/wiki/Property:P488) (P488)
+- [Mitgliederzahl](https://www.wikidata.org/wiki/Property:P2124) (P2124)
 - Wikipedia Seite mit Link (de)
 
 **Abfragen**
@@ -156,16 +198,26 @@ WHERE {
 **Items und Properties**
 
 - [Wahl](https://www.wikidata.org/wiki/Q40231) (Q40231)
+	- [Wahlgang](https://www.wikidata.org/wiki/Q24097670) (Q24097670)
 	- [Parlamentswahl](https://www.wikidata.org/wiki/Q1076105) (Q1076105)
 		- [Austrian legislative election](https://www.wikidata.org/wiki/Q22268901) (Q22268901)
 			- [Nationalratswahl in Österreich 2013](https://www.wikidata.org/wiki/Q1386143) (Q1386143)
 				- [Vorgänger](https://www.wikidata.org/wiki/Property:P155) (P155)
+				- [Nachfolger](https://www.wikidata.org/wiki/Property:P156) (P156)
 			- [Nationalratswahl in Österreich 2017](https://www.wikidata.org/wiki/Q19311231) (Q19311231)
 	- [Präsidentschaftswahl](https://www.wikidata.org/wiki/Q858439) (Q858439)
 		- [Bundespräsidentenwahl](https://www.wikidata.org/wiki/Q23498202) (Q23498202)
 			- [Bundespräsidentenwahl in Österreich 2016]() (Q19276001) - [zur Wahl stehendes Amt](https://www.wikidata.org/wiki/Property:P541) (P541)
+	- [Kandidat](https://www.wikidata.org/wiki/Property:P726)
 - [Nationalrat](https://www.wikidata.org/wiki/Q871363) (Q871363)
 - [Legislaturperiode](https://www.wikidata.org/wiki/Q15238777) (Q15238777)
+- [Anzahl der Sitze](https://www.wikidata.org/wiki/Property:P1342) (P1342)
+- [Wählerschaft](https://www.wikidata.org/wiki/Property:P1831) (P1831)
+- [abgegebene Stimme](https://www.wikidata.org/wiki/Property:P1868) (P1868)
+- [Anzahl gültiger Stimmen](https://www.wikidata.org/wiki/Property:P1697) (P1697)
+- [Anzahl der Sitze in gesetzgebendem Organ](https://www.wikidata.org/wiki/Property:P1410) (P1410)
+- [Stimmen](https://www.wikidata.org/wiki/Property:P1111) (P1111)
+- [erfolgreicher Kandidat](https://www.wikidata.org/wiki/Property:P991) (P991)
 - Wikipedia Seite mit Link (de)
 
 ```
@@ -178,8 +230,14 @@ WHERE {
 }
 ```
 
+## Infoboxes
+
+- [Template:Infobox officeholder](https://en.wikipedia.org/wiki/Template:Infobox_officeholder)
+
+
 ## Daten
 
+- {EveryPolitician](http://everypolitician.org/)
 - [Parlament](https://www.parlament.gv.at/WWER/NR/)
 - [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
 - [Meine Abgeordneten](https://www.meineabgeordneten.at/)
