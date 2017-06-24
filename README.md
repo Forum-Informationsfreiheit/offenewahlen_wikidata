@@ -2,9 +2,9 @@
 
 Wikidata soll die zentrale Datenbank für Parteien, Wahlen und PolitikerInnen aufgebaut werden. Gemeinsam sollen so die Daten eingetragen, gepflegt und genutzt werden, so dass alle mit einem möglichst guten Datenset arbeiten können.
 
-**Erstes Ziel**
+## Erstes Ziel
 
-Gemeinsam sollen die wichtigsten Daten zu allen aktuellen Nationalratsabgeordneten gesammelt und eingetragen werden. Dies wären:
+Gemeinsam sollen die wichtigsten Daten zu allen aktuellen 183 Nationalratsabgeordneten gesammelt und in Wikidata übertragen werden. Dies wären:
 - Name
 - Vorname
 - Nachname
@@ -13,6 +13,8 @@ Gemeinsam sollen die wichtigsten Daten zu allen aktuellen Nationalratsabgeordnet
 - Geburtsdatum
 - Geschlecht (Wikidata Item)
 - parteizugehörigkeit (Wikidata Item)
+
+Dazu werden die Daten zuerst im Spreadsheet `[data/nr-abgeordnete_20170623.csv](data/nr-abgeordnete_20170623.csv)` gesammelt, und danach in Wikidata importiert.
 
 ## PolitikerInnen
 
