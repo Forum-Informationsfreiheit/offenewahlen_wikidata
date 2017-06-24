@@ -14,7 +14,7 @@ Gemeinsam sollen die wichtigsten Daten zu allen aktuellen 183 Nationalratsabgeor
 - Geschlecht (Wikidata Item)
 - parteizugehörigkeit (Wikidata Item)
 
-Dazu werden die Daten zuerst im Spreadsheet `[data/nr-abgeordnete_20170623.csv](data/nr-abgeordnete_20170623.csv)` gesammelt, und danach in Wikidata importiert.
+Dazu werden die Daten zuerst im Spreadsheet [data/nr-abgeordnete_20170623.csv](data/nr-abgeordnete_20170623.csv) gesammelt, und danach in Wikidata importiert.
 
 ## PolitikerInnen
 
