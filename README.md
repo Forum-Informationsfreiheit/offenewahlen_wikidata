@@ -89,7 +89,7 @@ SELECT ?item ?itemLabel WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
-[Link](http://tinyurl.com/yc86ltqp)
+[Link](http://tinyurl.com/yczz44u9)
 
 ```
 # Alle Mitglieder des Nationalrates die es je gab
@@ -99,7 +99,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](http://tinyurl.com/yd248vu7)
+[Link](http://tinyurl.com/yamh7md4)
 
 ```
 # show birthplaces of current members of the austrian national council on a map
@@ -114,7 +114,7 @@ SELECT ?place ?placeLabel ?personLabel ?coords WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
-[Link](http://tinyurl.com/ya8aepk8)
+[Link](http://tinyurl.com/y7lheoby)
 
 ```
 # visualize the genders of Austrian mayors on a map
@@ -135,7 +135,7 @@ WHERE {
   }
 }
 ```
-[Link](http://tinyurl.com/y7dhq5l6)
+[Link](http://tinyurl.com/ybq28naf)
 
 ## Parteien
 
@@ -189,7 +189,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](http://tinyurl.com/y98tj65j)
+[Link](http://tinyurl.com/y7sw88tf)
 
 ```
 # Alle Parteien in Österreich
@@ -200,7 +200,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](http://tinyurl.com/ya53pwg4)
+[Link](http://tinyurl.com/y92a7r9v)
 
 ## Wahlen
 
@@ -238,16 +238,15 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](http://tinyurl.com/yar9tgt7)
+[Link](http://tinyurl.com/y9w3evhl)
 
 ## Infoboxes
 
 - [Template:Infobox officeholder](https://en.wikipedia.org/wiki/Template:Infobox_officeholder)
 
-
 ## Daten
 
-- {EveryPolitician](http://everypolitician.org/)
+- [EveryPolitician](http://everypolitician.org/)
 - [Parlament](https://www.parlament.gv.at/WWER/NR/)
 - [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
 - [Meine Abgeordneten](https://www.meineabgeordneten.at/)
