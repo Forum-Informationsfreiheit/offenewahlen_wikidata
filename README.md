@@ -14,7 +14,9 @@ Gemeinsam sollen die wichtigsten Daten zu allen aktuellen 183 Nationalratsabgeor
 - Geschlecht (Wikidata Item)
 - parteizugehörigkeit (Wikidata Item)
 
-Dazu werden die Daten zuerst im Spreadsheet [data/nr-abgeordnete_20170623.csv](data/nr-abgeordnete_20170623.csv) gesammelt, und danach in Wikidata importiert.
+Dazu werden die Daten zuerst im Spreadsheet [data/nr-abgeordnete_20170623.csv](data/nr-abgeordnete_20170623.csv) gesammelt. Am besten dazu die Abfrage nach allen Mitgliedern des Nationalrates ausführen und dann in der Suche nach den Nachnamen suchen, um auf die passende Person zu kommen.
+
+Danach werden die Daten mittels eines Python Scripts automatisch in Wikidata importiert.
 
 ## PolitikerInnen
 
@@ -22,6 +24,12 @@ Dazu werden die Daten zuerst im Spreadsheet [data/nr-abgeordnete_20170623.csv](d
 
 - [Vorname](https://www.wikidata.org/wiki/Property:P735) (P735)
 - [Geschlecht](https://www.wikidata.org/wiki/Property:P21) (P21)
+	- [männlich](https://www.wikidata.org/wiki/Q6581097) (Q6581097)
+	- [weiblich](https://www.wikidata.org/wiki/Q6581072) (Q6581072)
+	- [Intersexualität](https://www.wikidata.org/wiki/Q1097630) (Q1097630)
+	- [Transfrau](https://www.wikidata.org/wiki/Q1052281) (Q1052281)
+	- [Transmann](https://www.wikidata.org/wiki/Q2449503) (Q2449503)
+	- [Genderqueer](https://www.wikidata.org/wiki/Q48270) (Q48270);
 - [Geburtsdatum](https://www.wikidata.org/wiki/Property:P569) (P569)
 - [Geburtsort](https://www.wikidata.org/wiki/Property:P19) (P19)
 - [Gewählt in](https://www.wikidata.org/wiki/Property:P2715) (P2715)
