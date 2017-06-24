@@ -16,6 +16,7 @@ Gemeinsam sollen die wichtigsten Daten zu allen aktuellen 183 Nationalratsabgeor
 
 Dazu werden die Daten zuerst im Spreadsheet [data/nr-abgeordnete_20170623.csv](data/nr-abgeordnete_20170623.csv) gesammelt. Am besten dazu die Abfrage nach allen Mitgliedern des Nationalrates ausführen und dann in der Suche nach den Nachnamen suchen, um auf die passende Person zu kommen.
 
+
 Danach werden die Daten mittels eines Python Scripts automatisch in Wikidata importiert.
 
 ## PolitikerInnen
@@ -179,6 +180,7 @@ WHERE {
 
 ## Daten
 
+- [Parlament](https://www.parlament.gv.at/WWER/NR/)
 - [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
 - [Meine Abgeordneten](https://www.meineabgeordneten.at/)
 
