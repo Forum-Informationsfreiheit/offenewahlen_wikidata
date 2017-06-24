@@ -89,7 +89,7 @@ SELECT ?item ?itemLabel WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
-[Link](https://query.wikidata.org/#%23 Alle Politiker mit österr. Staatsbürgerschaft%0ASELECT %3Fitem %3FitemLabel WHERE {%0A %3Fitem wdt%3AP106 wd%3AQ82955%3B%0A wdt%3AP27 wd%3AQ40.%0A SERVICE wikibase%3Alabel { bd%3AserviceParam wikibase%3Alanguage "[AUTO_LANGUAGE]%2Cen". }%0A})
+[Link](http://tinyurl.com/yc86ltqp)
 
 ```
 # Alle Mitglieder des Nationalrates die es je gab
@@ -99,7 +99,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](https://query.wikidata.org/#%23 Alle Mitglieder des Nationalrates die es je gab%0ASELECT %3Fitem %3FitemLabel%0AWHERE {%0A %3Fitem wdt%3AP39 wd%3AQ17535155%3B%0A SERVICE wikibase%3Alabel { bd%3AserviceParam wikibase%3Alanguage "en" }%0A})
+[Link](http://tinyurl.com/yd248vu7)
 
 ```
 # show birthplaces of current members of the austrian national council on a map
@@ -114,10 +114,9 @@ SELECT ?place ?placeLabel ?personLabel ?coords WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
-[Link](https://query.wikidata.org/#%23 show birthplaces of current members of the austrian national council on a map%0A%23defaultView%3AMap%0ASELECT %3Fplace %3FplaceLabel %3FpersonLabel %3Fcoords WHERE {%0A %3Fperson p%3AP39 %3Fstatement. %23 person holds position <statement>%0A %3Fstatement ps%3AP39 wd%3AQ17535155. %23 the position is being member of the European Parliament%0A %3Fstatement pq%3AP580 %3Fstarttime. %23 the position has a start time...%0A FILTER NOT EXISTS {%3Fstatement pq%3AP582 %3Fendtime} %23 ... but no end time%0A %3Fperson wdt%3AP19 %3Fplace. %23 person is born in place%0A %3Fplace wdt%3AP625 %3Fcoords. %23 the place's coordinates%0A SERVICE wikibase%3Alabel { bd%3AserviceParam wikibase%3Alanguage "[AUTO_LANGUAGE]%2Cen". }%0A})
+[Link](http://tinyurl.com/ya8aepk8)
 
 ```
-
 # visualize the genders of Austrian mayors on a map
 #defaultView:Map
 SELECT ?cityLabel ?coords ?headLabel (?genderLabel as ?layer)
@@ -136,7 +135,7 @@ WHERE {
   }
 }
 ```
-[Link]()https://query.wikidata.org/#%23 visualize the genders of Austrian mayors on a map%0A%23defaultView%3AMap%0ASELECT %3FcityLabel %3Fcoords %3FheadLabel (%3FgenderLabel as %3Flayer)%0AWHERE {%0A %3Fcity wdt%3AP6 %3Fhead. %23 head of government of city%0A %3Fcity wdt%3AP17 wd%3AQ40. %23 city in Austria%0A %3Fcity wdt%3AP625 %3Fcoords. %23 city's coordinates%0A %3Fhead wdt%3AP21 %3Fgender. %23 head's gender%0A %0A %23 tell the labelling service explicitly which labels to apply%0A SERVICE wikibase%3Alabel {%0A bd%3AserviceParam wikibase%3Alanguage "[AUTO_LANGUAGE]%2Cen".%0A %3Fcity rdfs%3Alabel %3FcityLabel.%0A %3Fhead rdfs%3Alabel %3FheadLabel.%0A %3Fgender rdfs%3Alabel %3FgenderLabel.%0A }%0A}%0A
+[Link](http://tinyurl.com/y7dhq5l6)
 
 ## Parteien
 
@@ -190,7 +189,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](https://query.wikidata.org/#%23 Alle Mitglieder des Nationalrates mit allen deren Bildern%0ASELECT %3Fitem %3FitemLabel %3Fpic%0AWHERE {%0A %3Fitem wdt%3AP39 wd%3AQ17535155%3B%0A OPTIONAL {%0A %3Fitem wdt%3AP18 %3Fpic.%0A }%0A SERVICE wikibase%3Alabel { bd%3AserviceParam wikibase%3Alanguage "en" }%0A})
+[Link](http://tinyurl.com/y98tj65j)
 
 ```
 # Alle Parteien in Österreich
@@ -201,7 +200,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](https://query.wikidata.org/#%23 Alle Parteien in Österreich%0ASELECT %3Fitem %3FitemLabel%0AWHERE {%0A %3Fitem wdt%3AP31 wd%3AQ7278%3B%0A wdt%3AP17 wd%3AQ40.%0A SERVICE wikibase%3Alabel { bd%3AserviceParam wikibase%3Alanguage "en" }%0A})
+[Link](http://tinyurl.com/ya53pwg4)
 
 ## Wahlen
 
@@ -239,7 +238,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](https://query.wikidata.org/#%23 Alle "Austrian legislative elections"%0ASELECT %3Fitem %3FitemLabel%0AWHERE {%0A %3Fitem wdt%3AP31 wd%3AQ22268901%3B%0A wdt%3AP17 wd%3AQ40.%0A SERVICE wikibase%3Alabel { bd%3AserviceParam wikibase%3Alanguage "en" }%0A})
+[Link](http://tinyurl.com/yar9tgt7)
 
 ## Infoboxes
 
