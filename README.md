@@ -70,13 +70,13 @@ Danach werden die Daten mittels eines Python Scripts automatisch in Wikidata imp
 
 **Projekte**
 - [Wikidata:WikiProject Politics infoboxes](https://www.wikidata.org/wiki/Wikidata:WikiProject_Politics_infoboxes)
-- [Wikidata:WikiProject Heads of state and government](https://www.wikidata.org/wiki/Wikidata:WikiProject_Heads_of_state_and_government)	
-- [Wikidata:EveryPolitician](https://www.wikidata.org/w/index.php?title=Wikidata:EveryPolitician)**
-	- [Wikidata:EveryPolitician/Report:P6](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P6)
-	- [Wikidata:EveryPolitician/Report:P1313/P1308](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P1308)
-	- [Wikidata:EveryPolitician/Report:P39/Q2285706](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P39/Q2285706)
-	- [Wikidata:EveryPolitician/Contrast Report:Head of Government](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Contrast_Report:Head_of_Government)
-	- [Wikidata:EveryPolitician/Report:P1313/P39](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P39)
+- [Wikidata:WikiProject Heads of state and government](https://www.wikidata.org/wiki/Wikidata:WikiProject_Heads_of_state_and_government)
+- [Wikidata:EveryPolitician](https://www.wikidata.org/w/index.php?title=Wikidata:EveryPolitician)
+	- [Wikidata:EveryPolitician/Report:P6](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P6): Heads of Government Report
+	- [Wikidata:EveryPolitician/Report:P1313/P1308](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P1308): Officeholders Report
+	- [Wikidata:EveryPolitician/Report:P39/Q2285706](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P39/Q2285706): Position held Report
+	- [Wikidata:EveryPolitician/Contrast Report:Head of Government](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Contrast_Report:Head_of_Government): Head of Government Contrast Report. Vergleicht verschiedene Eintragungen auf Konsistenz.
+	- [Wikidata:EveryPolitician/Report:P1313/P39](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P39): Officeholders Report.
 	
 
 **Abfragen**
@@ -219,6 +219,7 @@ WHERE {
 			- [Bundespräsidentenwahl in Österreich 2016]() (Q19276001) - [zur Wahl stehendes Amt](https://www.wikidata.org/wiki/Property:P541) (P541)
 	- [Kandidat](https://www.wikidata.org/wiki/Property:P726)
 - [Nationalrat](https://www.wikidata.org/wiki/Q871363) (Q871363)
+- [Bundesrat](https://www.wikidata.org/wiki/Q557150) (Q557150)
 - [Legislaturperiode](https://www.wikidata.org/wiki/Q15238777) (Q15238777)
 - [Anzahl der Sitze](https://www.wikidata.org/wiki/Property:P1342) (P1342)
 - [Wählerschaft](https://www.wikidata.org/wiki/Property:P1831) (P1831)
