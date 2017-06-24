@@ -1,5 +1,18 @@
+# Wikidata und Wahldaten
 
+Wikidata soll die zentrale Datenbank für Parteien, Wahlen und PolitikerInnen aufgebaut werden. Gemeinsam sollen so die Daten eingetragen, gepflegt und genutzt werden, so dass alle mit einem möglichst guten Datenset arbeiten können.
 
+**Erstes Ziel**
+
+Gemeinsam sollen die wichtigsten Daten zu allen aktuellen Nationalratsabgeordneten gesammelt und eingetragen werden. Dies wären:
+- Name
+- Vorname
+- Nachname
+- Wikidata ID
+- Geburtsort (Wikidata Item)
+- Geburtsdatum
+- Geschlecht (Wikidata Item)
+- parteizugehörigkeit (Wikidata Item)
 
 ## PolitikerInnen
 
@@ -54,11 +67,7 @@
 - [Wikidata:EveryPolitician/Report:P39/Q2285706](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P39/Q2285706)
 - [Wikidata:EveryPolitician/Contrast Report:Head of Government](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Contrast_Report:Head_of_Government)
 - [Wikidata:EveryPolitician/Report:P1313/P39](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P39)
-
-**Daten**
-
-- [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
-- [Meine Abgeordneten](https://www.meineabgeordneten.at/)	
+	
 
 **Abfragen**
 
@@ -122,6 +131,15 @@ WHERE {
 }
 ```
 
+```
+# Alle Parteien in Österreich
+WHERE {
+  ?item wdt:P31 wd:Q7278;
+        wdt:P17 wd:Q40.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+```
+
 ## Wahlen
 
 **Items und Properties**
@@ -139,14 +157,20 @@ WHERE {
 - [Legislaturperiode](https://www.wikidata.org/wiki/Q15238777) (Q15238777)
 - Wikipedia Seite mit Link (de)
 
-
-**Abfragen**
-
 ```
-ABFRAGE
+# Alle "Austrian legislative elections"
+SELECT ?item ?itemLabel
+WHERE {
+  ?item wdt:P31 wd:Q22268901;
+        wdt:P17 wd:Q40.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
 ```
 
+## Daten
 
+- [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
+- [Meine Abgeordneten](https://www.meineabgeordneten.at/)
 
 
 
