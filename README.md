@@ -1,25 +1,79 @@
 # Wikidata und Wahldaten
 
-Wikidata soll die zentrale Datenbank für Parteien, Wahlen und PolitikerInnen aufgebaut werden. Gemeinsam sollen so die Daten eingetragen, gepflegt und genutzt werden, so dass alle mit einem möglichst guten Datenset arbeiten können.
+Wikidata bietet sich als die idealle Datenbank für Informationen zu österreichischen Parteien, Wahlen und PolitikerInnen an - um diese zu sammeln und so auch wieder allen zur verfügung zu stellen. Als ersten Schritt dazu, muss die Datenbasis in Wikidata möglichst gut und komplett sein. Daher sind die meisten Aktivitäten zu Beginn rund um das Eintragen von Daten in Wikidata.
 
-## Erstes Ziel
+## Was kann ich tun?
 
-Gemeinsam sollen die wichtigsten Daten zu allen aktuellen 183 Nationalratsabgeordneten gesammelt und in Wikidata übertragen werden. Dies wären:
-- Name
-- Vorname
-- Nachname
-- Wikidata ID
-- Geburtsort (Wikidata Item)
-- Geburtsdatum
-- Geschlecht (Wikidata Item)
-- parteizugehörigkeit (Wikidata Item)
+* Übersichten erstellen, um den Stand der Daten mitsamt Datenqualität überprüfen zu können
+* Daten manuell in Wikidata eintragen
+** alles rund um die Nationalratswahlen 2017: Parteien, [Wahl](), KandidatInnen, Wahlsprengel, 	
+** Parteizugehörigkeit hinzufügen: sollte auf jeden Fall mit EveryPolitician synchronisiert sein.
+* Daten automatisch via Programmiersprachen in Wikidata eintragen
+** das Import-Script verbessern
+*** Export via [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php) hinzufügen: erstellen der Tabelle für den QuickStatement import.
+*** erstellen eines Wikidata Items, falls Politiker noch nicht angelegt ist hinzufügen.
+*** Import von anderen Ländern aus dem [EveryPolitician Datasets](http://everypolitician.org/) hinzufügen
+*** weitere Daten vom [EveryPolitician Austria Dataset](http://everypolitician.org/austria/	) importieren
+*** Export der Wikidata Items durch vorgefertigte Queries: Mitglieder Nationalrat, Politiker aus AT, etc.
+*** Source der Daten bei Import hinzufügen
+* Sammeln von Werkzeugen, um die Daten zu bearbeiten.
+* Entwickeln von Anwendungen und Tools
+* Dokumentation verbessern: vor allem wichtige Tipps für EinsteigerInnen wären hilfreich.
+* Tutorials für offenewahlen.at schreiben: speziell zu Eintragungen bzw. Nutzung von Wikidata. Offene Wahlen ist eine GitHub Page und hat dazu ein eigenes ([GitHub Repo](https://github.com/OKFNat/offenewahlen-website)).
+* eine Wikidata Projekt-Seite für AT und Politik anlegen: z. B. Wikidata:WikiProject Austria/Politicians
+* [Wikidata Abfragen](https://query.wikidata.org) verfassen
+* die Daten nutzen: 
+** Visualisierungen nutzen
+** mit anderen Daten kombinieren
+** Analysen machen
 
-Dazu werden die Daten zuerst im Spreadsheet [data/nr-abgeordnete_20170623.csv](data/nr-abgeordnete_20170623.csv) gesammelt. Am besten dazu die Abfrage nach allen Mitgliedern des Nationalrates ausführen und dann in der Suche nach den Nachnamen suchen, um auf die passende Person zu kommen.
+## Bisherige Aktivitäten
+
+### Sammeln von Informationen
+
+In dieser Datei wurden die relevanten Informationen rund um Wikidata und österreichische PolitikerInnen, Parteien und Wahlen gesammelt (siehe weiter unten). Wir empfehlen, sich das mal anzusehen, um ein Gefühl für die aktuelle Datenstruktur zu den Items zu bekommen.
+
+### Österr. Nationalrats-Abgeordnete aus EveryPolitician eintragen
+
+Um die Informationslage zu österr. Nationalratsabgeordneten in Wikidata zu verbessern, wurden die Daten von [EveryPolitician](http://everypolitician.org/) mittels dem Python Tool [wikidataintegrator](https://github.com/SuLab/WikidataIntegrator) importiert. Die dabei verwendeten Daten sind in etwas ein Jahr alt (Stand 25. Juni 2017). Das dazu verwendete Script findet sich unter `code/everypolitician2wikidata.py`.
+
+Folgende Datenfelder wurden importiert:
+- `given_name`: Vorname
+- `gender`: Geschlecht
+- `birth_date`: Geburtsdatum
+- `contact_details` vom Typ Twitter
+
+Folgende Daten wären noch wichtig:
+- Parteizugehörigkeit
+
+Zum Ausführen des Scripts wird im `code/`-Ordner eine `include.py`-Datei mit folgendem Inhalt benötigt (USERNAME und PASSWORD sind durch die eigenen Werte zu ersetzen).
+```json
+data = {
+	'wikidata': {
+		'user': 'USERNAME',
+		'password': 'PASSWORD'
+	}
+}
+```
+
+## Österreich
+
+Generll lassen sich einige Informationen auf [offenewahlen.at](http://offenewahlen.at) finden.
+
+Der Nationalrat besteht in Österreich aus 183 Nationalratsabgeordneten.
+
+was ist der NR?
+was macht der NR?
+WIKIPEDIA PAGES !!!
 
 
-Danach werden die Daten mittels eines Python Scripts automatisch in Wikidata importiert.
+## Wikidata und Wahldaten
 
-## PolitikerInnen
+Wikidata ist der zentrale Ort, um Daten zu PolitikerInnen, Parteien und Wahlen zu sammeln und zu verknüpfen. Ins besondere das Verbinden von verschiedenen "Unique Identifiers" aus verschiedenen anderen Datenbanken ist hierbei zu nennen. So soll es einfach gemacht werden, Daten von verschiedensten Quellen miteinander zu verknüpfen.
+
+### PolitikerInnen
+
+INFOS
 
 **Items und Properties**
 
@@ -99,17 +153,31 @@ SELECT ?item ?itemLabel WHERE {
 SELECT ?item ?itemLabel
 WHERE {
   ?item wdt:P39 wd:Q17535155;
+  FILTER NOT EXISTS {?statement pq:P582 ?endtime} # ... but no end time
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
 [Link](http://tinyurl.com/yamh7md4)
 
 ```
-# show birthplaces of current members of the austrian national council on a map
+# Alle aktuellen Mitglieder des Nationalrates
+SELECT ?person ?personLabel
+WHERE {
+  ?person p:P39 ?statement. # person holds position <statement>
+  ?statement ps:P39 wd:Q17535155. # the position is being member of the European Parliament
+  ?statement pq:P580 ?starttime. # the position has a start time...
+  FILTER NOT EXISTS {?statement pq:P582 ?endtime} # ... but no end time
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+```
+[Link](http://tinyurl.com/y7k7fh3q)
+
+```
+# zeige geburtsorte von aktuellen mitgliedern des nationalrates auf einer Karte
 #defaultView:Map
 SELECT ?place ?placeLabel ?personLabel ?coords WHERE {
   ?person p:P39 ?statement. # person holds position <statement>
-  ?statement ps:P39 wd:Q17535155. # the position is being member of the European Parliament
+  ?statement ps:P39 wd:Q17535155. # the position is being member of the austrian national council
   ?statement pq:P580 ?starttime. # the position has a start time...
   FILTER NOT EXISTS {?statement pq:P582 ?endtime} # ... but no end time
   ?person wdt:P19 ?place. # person is born in place
@@ -120,7 +188,7 @@ SELECT ?place ?placeLabel ?personLabel ?coords WHERE {
 [Link](http://tinyurl.com/y7lheoby)
 
 ```
-# visualize the genders of Austrian mayors on a map
+# visualisiere die Geschlechter von österr. BürgermeisterInnen auf einer Karte
 #defaultView:Map
 SELECT ?cityLabel ?coords ?headLabel (?genderLabel as ?layer)
 WHERE {
@@ -140,7 +208,9 @@ WHERE {
 ```
 [Link](http://tinyurl.com/ybq28naf)
 
-## Parteien
+### Parteien
+
+INFOS
 
 **Items und Properties**
 
@@ -205,7 +275,9 @@ WHERE {
 ```
 [Link](http://tinyurl.com/y92a7r9v)
 
-## Wahlen
+### Wahlen
+
+INFOS
 
 **Items und Properties**
 
@@ -242,28 +314,19 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](http://tinyurl.com/y9w3evhl)
+[Link](http://tinyurl.com/y9w3evhl)	q
 
-## Infoboxes
+## Resources
 
 - [Template:Infobox officeholder](https://en.wikipedia.org/wiki/Template:Infobox_officeholder)
 
-## Daten
+### Daten
 
+- [EveryPolitician](http://everypolitician.org/)
 - [Parlament](https://www.parlament.gv.at/WWER/NR/)
 - [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
 - [Meine Abgeordneten](https://www.meineabgeordneten.at/)
 
-### [EveryPolitician](http://everypolitician.org/)
-
-Enthaltene relevante Informationen
-- `given_name`: Vorname
-- `family_name`: Familienname
-- `gender`: Geschlecht
-- `birth_date`: Geburtsdatum (YYYY-MM-DD)
-- `id`
-- `identifiers` -> `identifier` -> `parlaments_at`
-- `identifiers` -> `identifier` -> `wikidata`: Wikidata ID
 
 
 
