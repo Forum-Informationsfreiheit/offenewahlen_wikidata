@@ -32,7 +32,8 @@ Danach werden die Daten mittels eines Python Scripts automatisch in Wikidata imp
 	- [Transmann](https://www.wikidata.org/wiki/Q2449503) (Q2449503)
 	- [Genderqueer](https://www.wikidata.org/wiki/Q48270) (Q48270);
 - [Geburtsdatum](https://www.wikidata.org/wiki/Property:P569) (P569)
-- [Geburtsort](https://www.wikidata.org/wiki/Property:P19) (P19)
+- [Geburtsort](https://www.wikidata.org/wiki/Property:P19) (P19
+- [Twitter Benutzername](https://www.wikidata.org/wiki/Property:P2002) (P2002)
 - [Gewählt in](https://www.wikidata.org/wiki/Property:P2715) (P2715)
 - [Land der Staatsangehörigkeit](https://www.wikidata.org/wiki/Property:P27) (P27)
 	- [Österreich](https://www.wikidata.org/wiki/Q40) (Q40)
@@ -49,6 +50,8 @@ Danach werden die Daten mittels eines Python Scripts automatisch in Wikidata imp
 	- [Mitglied des österreichischen Bundesrates](https://www.wikidata.org/wiki/Q19360771) (Q19360771)
 	- [Mitglied des Wiener Landtages und Gemeinderates](https://www.wikidata.org/wiki/Q23711521) (Q23711521)
 	- [Mitglied des Europäischen Parlaments](https://www.wikidata.org/wiki/Q27169) (Q27169)
+	- -> [Startzeitpunkt](https://www.wikidata.org/wiki/Property:P580) (P580)
+	- -> [Endzeitpunkt](https://www.wikidata.org/wiki/Property:P582) (P582)
 - [Parteizugehörigkeit](https://www.wikidata.org/wiki/Property:P102) (P102): Liste der relevantesten Parteien siehe unter Parteien
 - [Zugehörigkeit zu](https://www.wikidata.org/wiki/Property:P1416) (P1416)
 - [Tätigkeit](https://www.wikidata.org/wiki/Property:P106) (P106)
@@ -247,10 +250,25 @@ WHERE {
 
 ## Daten
 
-- [EveryPolitician](http://everypolitician.org/)
 - [Parlament](https://www.parlament.gv.at/WWER/NR/)
 - [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
 - [Meine Abgeordneten](https://www.meineabgeordneten.at/)
+
+### [EveryPolitician](http://everypolitician.org/)
+
+Enthaltene relevante Informationen
+- `given_name`: Vorname
+- `family_name`: Familienname
+- `gender`: Geschlecht
+- `birth_date`: Geburtsdatum (YYYY-MM-DD)
+- `id`
+- `identifiers` -> `identifier` -> `parlaments_at`
+- `identifiers` -> `identifier` -> `wikidata`: Wikidata ID
+
+
+
+
+
 
 
 
