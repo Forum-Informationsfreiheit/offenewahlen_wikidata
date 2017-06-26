@@ -6,16 +6,16 @@ Wikidata bietet sich als die idealle Datenbank für Informationen zu österreich
 
 * Übersichten erstellen, um den Stand der Daten mitsamt Datenqualität überprüfen zu können
 * Daten manuell in Wikidata eintragen
-** alles rund um die Nationalratswahlen 2017: Parteien, [Wahl](), KandidatInnen, Wahlsprengel, 	
-** Parteizugehörigkeit hinzufügen: sollte auf jeden Fall mit EveryPolitician synchronisiert sein.
+	* alles rund um die Nationalratswahlen 2017: Parteien, [Wahl](), KandidatInnen, Wahlsprengel,
+	* Parteizugehörigkeit hinzufügen: sollte auf jeden Fall mit EveryPolitician synchronisiert sein.
 * Daten automatisch via Programmiersprachen in Wikidata eintragen
-** das Import-Script verbessern
-*** Export via [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php) hinzufügen: erstellen der Tabelle für den QuickStatement import.
-*** erstellen eines Wikidata Items, falls Politiker noch nicht angelegt ist hinzufügen.
-*** Import von anderen Ländern aus dem [EveryPolitician Datasets](http://everypolitician.org/) hinzufügen
-*** weitere Daten vom [EveryPolitician Austria Dataset](http://everypolitician.org/austria/	) importieren
-*** Export der Wikidata Items durch vorgefertigte Queries: Mitglieder Nationalrat, Politiker aus AT, etc.
-*** Source der Daten bei Import hinzufügen
+	* das Import-Script verbessern
+		* Export via [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php) hinzufügen: erstellen der Tabelle für den QuickStatement import.
+		* erstellen eines Wikidata Items, falls Politiker noch nicht angelegt ist hinzufügen.
+		* Import von anderen Ländern aus dem [EveryPolitician Datasets](http://everypolitician.org/) hinzufügen
+		* weitere Daten vom [EveryPolitician Austria Dataset](http://everypolitician.org/austria/	) importieren
+		* Export der Wikidata Items durch vorgefertigte Queries: Mitglieder Nationalrat, Politiker aus AT, etc.
+		* Source der Daten bei Import hinzufügen
 * Sammeln von Werkzeugen, um die Daten zu bearbeiten.
 * Entwickeln von Anwendungen und Tools
 * Dokumentation verbessern: vor allem wichtige Tipps für EinsteigerInnen wären hilfreich.
@@ -23,9 +23,9 @@ Wikidata bietet sich als die idealle Datenbank für Informationen zu österreich
 * eine Wikidata Projekt-Seite für AT und Politik anlegen: z. B. Wikidata:WikiProject Austria/Politicians
 * [Wikidata Abfragen](https://query.wikidata.org) verfassen
 * die Daten nutzen: 
-** Visualisierungen nutzen
-** mit anderen Daten kombinieren
-** Analysen machen
+	* Visualisierungen nutzen
+	* mit anderen Daten kombinieren
+	* Analysen machen
 
 ## Bisherige Aktivitäten
 
