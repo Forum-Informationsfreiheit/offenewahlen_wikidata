@@ -9,7 +9,7 @@ Wikidata bietet sich als die idealle Datenbank für Informationen zu österreich
 	* alles rund um die Nationalratswahlen 2017: Parteien, [Wahl](), KandidatInnen, Wahlsprengel,
 	* Parteizugehörigkeit hinzufügen: sollte auf jeden Fall mit EveryPolitician synchronisiert sein.
 * Daten automatisch via Programmiersprachen in Wikidata eintragen
-	* das Import-Script verbessern
+	* das EveryPolitician-Import-Script verbessern (`code/everypolitician2wikidata.py`)
 		* Export via [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php) hinzufügen: erstellen der Tabelle für den QuickStatement import.
 		* erstellen eines Wikidata Items, falls Politiker noch nicht angelegt ist hinzufügen.
 		* Import von anderen Ländern aus dem [EveryPolitician Datasets](http://everypolitician.org/) hinzufügen
