@@ -2,6 +2,9 @@
 
 Wikidata bietet sich als die idealle Datenbank für Informationen zu österreichischen Parteien, Wahlen und PolitikerInnen an - um diese zu sammeln und so auch wieder allen zur verfügung zu stellen. Als ersten Schritt dazu, muss die Datenbasis in Wikidata möglichst gut und komplett sein. Daher sind die meisten Aktivitäten zu Beginn rund um das Eintragen von Daten in Wikidata.
 
+- [Wikidata.org](http://wikidata.org/)
+- [SPARQL Query Service](https://query.wikidata.org/)
+
 ## Was kann ich tun?
 
 * Übersichten erstellen, um den Stand der Daten mitsamt Datenqualität überprüfen zu können
@@ -34,6 +37,17 @@ Wikidata bietet sich als die idealle Datenbank für Informationen zu österreich
 In dieser Datei wurden die relevanten Informationen rund um Wikidata und österreichische PolitikerInnen, Parteien und Wahlen gesammelt (siehe weiter unten). Wir empfehlen, sich das mal anzusehen, um ein Gefühl für die aktuelle Datenstruktur zu den Items zu bekommen.
 
 ### Österr. Nationalrats-Abgeordnete aus EveryPolitician eintragen
+
+**Liste an österr. Nationalratsabgeordneten**
+
+Es gibt aktuell 183 Sitze im österr. Nationalrat. Die Sitzverteilung ist aktuell (23. 6. 2017) wie folgt:
+- ﻿SPÖ 52
+- ﻿ÖVP 51
+- ﻿FPÖ 38
+- ﻿GRÜNE 24
+- ﻿NEOS 8
+- ﻿TS 6
+- ﻿Fraktionslos 4
 
 Um die Informationslage zu österr. Nationalratsabgeordneten in Wikidata zu verbessern, wurden die Daten von [EveryPolitician](http://everypolitician.org/) mittels dem Python Tool [wikidataintegrator](https://github.com/SuLab/WikidataIntegrator) importiert. Die dabei verwendeten Daten sind in etwas ein Jahr alt (Stand 25. Juni 2017). Das dazu verwendete Script findet sich unter `code/everypolitician2wikidata.py`.
 
@@ -286,13 +300,15 @@ INFOS
 	- [Parlamentswahl](https://www.wikidata.org/wiki/Q1076105) (Q1076105)
 		- [Austrian legislative election](https://www.wikidata.org/wiki/Q22268901) (Q22268901)
 			- [Nationalratswahl in Österreich 2013](https://www.wikidata.org/wiki/Q1386143) (Q1386143)
+			- [Nationalratswahl in Österreich 2017](https://www.wikidata.org/wiki/Q19311231) (Q19311231)
+			- Generell:
 				- [Vorgänger](https://www.wikidata.org/wiki/Property:P155) (P155)
 				- [Nachfolger](https://www.wikidata.org/wiki/Property:P156) (P156)
-			- [Nationalratswahl in Österreich 2017](https://www.wikidata.org/wiki/Q19311231) (Q19311231)
 	- [Präsidentschaftswahl](https://www.wikidata.org/wiki/Q858439) (Q858439)
 		- [Bundespräsidentenwahl](https://www.wikidata.org/wiki/Q23498202) (Q23498202)
 			- [Bundespräsidentenwahl in Österreich 2016]() (Q19276001) - [zur Wahl stehendes Amt](https://www.wikidata.org/wiki/Property:P541) (P541)
 	- [Kandidat](https://www.wikidata.org/wiki/Property:P726)
+	- [Ergebnisse der Wahlen zum Europäischen Parlament in Österreich](https://www.wikidata.org/wiki/Q4825411) (Q4825411)
 - [Nationalrat](https://www.wikidata.org/wiki/Q871363) (Q871363)
 - [Bundesrat](https://www.wikidata.org/wiki/Q557150) (Q557150)
 - [Legislaturperiode](https://www.wikidata.org/wiki/Q15238777) (Q15238777)
@@ -314,11 +330,15 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
 ```
-[Link](http://tinyurl.com/y9w3evhl)	q
+[Link](http://tinyurl.com/y9w3evhl)
 
 ## Resources
 
 - [Template:Infobox officeholder](https://en.wikipedia.org/wiki/Template:Infobox_officeholder)
+- [Hilfe](https://www.wikidata.org/wiki/Wikidata:Introduction/de)
+- [SPARQL Hilfe](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
+- [Wikidata API](https://www.wikidata.org/w/api.php)
+- [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php)
 
 ### Daten
 
@@ -326,6 +346,7 @@ WHERE {
 - [Parlament](https://www.parlament.gv.at/WWER/NR/)
 - [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
 - [Meine Abgeordneten](https://www.meineabgeordneten.at/)
+- [Wikidata:EveryPolitician](https://www.wikidata.org/w/index.php?title=Wikidata:EveryPolitician)
 
 
 
