@@ -2,10 +2,14 @@
 
 Wikidata bietet sich als die idealle Datenbank für Informationen zu österreichischen Parteien, Wahlen und PolitikerInnen an - um diese zu sammeln und so auch wieder allen zur verfügung zu stellen. Als ersten Schritt dazu, muss die Datenbasis in Wikidata möglichst gut und komplett sein. Daher sind die meisten Aktivitäten zu Beginn rund um das Eintragen von Daten in Wikidata.
 
-- [Wikidata.org](http://wikidata.org/)
-- [SPARQL Query Service](https://query.wikidata.org/)
+* [Wikidata.org](http://wikidata.org/)
+* [SPARQL Query Service](https://query.wikidata.org/)
 
-## Was kann ich tun?
+**[http://offenewahlen.at/](http://offenewahlen.at/)**
+
+![Offene Wahlen](https://github.com/OKFNat/offenewahlen-at/blob/master/images/logos/ow-at.png)
+
+## Mitmachen
 
 * Übersichten erstellen, um den Stand der Daten mitsamt Datenqualität überprüfen zu können
 * Daten manuell in Wikidata eintragen
@@ -87,7 +91,7 @@ Wikidata ist der zentrale Ort, um Daten zu PolitikerInnen, Parteien und Wahlen z
 
 ### PolitikerInnen
 
-INFOS
+Sammlung an Wikidata Items und Properties rund um PolitikerInnen.
 
 **Items und Properties**
 
@@ -157,18 +161,18 @@ INFOS
 SELECT ?item ?itemLabel WHERE {
   ?item wdt:P106 wd:Q82955;
         wdt:P27 wd:Q40.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de". }
 }
 ```
 [Link](http://tinyurl.com/yczz44u9)
 
 ```
-# Alle Mitglieder des Nationalrates die es je gab
+# Alle Mitglieder des Nationalrates die es je gab mit allen deren Bildern
 SELECT ?item ?itemLabel
 WHERE {
   ?item wdt:P39 wd:Q17535155;
   FILTER NOT EXISTS {?statement pq:P582 ?endtime} # ... but no end time
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de" }
 }
 ```
 [Link](http://tinyurl.com/yamh7md4)
@@ -181,7 +185,7 @@ WHERE {
   ?statement ps:P39 wd:Q17535155. # the position is being member of the European Parliament
   ?statement pq:P580 ?starttime. # the position has a start time...
   FILTER NOT EXISTS {?statement pq:P582 ?endtime} # ... but no end time
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de" }
 }
 ```
 [Link](http://tinyurl.com/y7k7fh3q)
@@ -196,7 +200,7 @@ SELECT ?place ?placeLabel ?personLabel ?coords WHERE {
   FILTER NOT EXISTS {?statement pq:P582 ?endtime} # ... but no end time
   ?person wdt:P19 ?place. # person is born in place
   ?place wdt:P625 ?coords. # the place's coordinates
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de". }
 }
 ```
 [Link](http://tinyurl.com/y7lheoby)
@@ -213,7 +217,7 @@ WHERE {
   
   # tell the labelling service explicitly which labels to apply
   SERVICE wikibase:label {
-    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de".
     ?city rdfs:label ?cityLabel.
     ?head rdfs:label ?headLabel.
     ?gender rdfs:label ?genderLabel.
@@ -224,10 +228,12 @@ WHERE {
 
 ### Parteien
 
-INFOS
+Sammlung an Wikidata Items und Properties rund um Parteien.
 
 **Items und Properties**
 
+- [politische Partei](https://www.wikidata.org/wiki/Q7278) (Q7278)
+- [politische Ideologie](https://www.wikidata.org/wiki/Property:P1142) (P1142)
 - [Name in Amts- oder Originalsprache](https://www.wikidata.org/wiki/Property:P1705) (P1705)
 - [Vorsitzender](https://www.wikidata.org/wiki/Property:P488) (P488)
 - [Mitglied von](https://www.wikidata.org/wiki/Property:P463) (P463)
@@ -240,11 +246,13 @@ INFOS
 	- [Europäische Nationale Front](https://www.wikidata.org/wiki/Q653566) (Q653566)
 	- [Europäische Demokratische Partei](https://www.wikidata.org/wiki/Q734792) (Q734792)
 	- [Bewegung für ein Europa der Freiheit und der Demokratie](https://www.wikidata.org/wiki/Q852329) (Q852329)
+	- [Bewegung für ein Europa der Nationen und der Freiheit](https://www.wikidata.org/wiki/Q18907386) (Q18907386)
 	- [Europäische Grüne Partei](https://www.wikidata.org/wiki/Q950179) (Q950179)
 	- [Europeans United for Democracy](https://www.wikidata.org/wiki/Q1276239) (Q1276239)
 	- [Europäische Allianz für Freiheit](https://www.wikidata.org/wiki/Q1377195) (Q1377195)
 	- [Europäische Christliche Politische Bewegung](https://www.wikidata.org/wiki/Q1377279) (Q1377279)
 	- [Allianz der Konservativen und Reformer in Europa](https://www.wikidata.org/wiki/Q1577483) (Q1577483)
+	- [Pirate Parties International](https://www.wikidata.org/wiki/Q170) (Q170)
 - [Farbe](https://www.wikidata.org/wiki/Property:P462) (P462)
 - [offizielle Website](https://www.wikidata.org/wiki/Property:P856) (P856)
 - [Logo](https://www.wikidata.org/wiki/Property:P154) (P154)
@@ -262,21 +270,15 @@ INFOS
 - [Sozialdemokratische Partei Österreichs](https://www.wikidata.org/wiki/Q179111) (Q179111)
 - [Team Stronach](https://www.wikidata.org/wiki/Q103748) (Q103748)
 - [Parteiloser](https://www.wikidata.org/wiki/Q327591) (Q327591)
+- [Piratenpartei Österreichs](https://www.wikidata.org/wiki/Q695270) (Q695270)
+- [Christliche Partei Österreichs](https://www.wikidata.org/wiki/Q578350) (Q578350)
+- [Christliche Wählergemeinschaft](https://www.wikidata.org/wiki/Q876085) (Q876085)
+- [EU-Austrittspartei für Österreich](https://www.wikidata.org/wiki/Q33697797) (Q33697797)
+- [Kommunistische Partei Österreichs](https://www.wikidata.org/wiki/Q161118) (Q161118)
+- [Bündnis Zukunft Österreich](https://www.wikidata.org/wiki/Q653833) (Q653833)
+- [Der Wandel](https://www.wikidata.org/wiki/Q15805222) (Q15805222)
 
 **Abfragen**
-
-```
-# Alle Mitglieder des Nationalrates mit allen deren Bildern
-SELECT ?item ?itemLabel ?pic
-WHERE {
-  ?item wdt:P39 wd:Q17535155;
-  OPTIONAL {
-    ?item wdt:P18 ?pic.
-  }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
-}
-```
-[Link](http://tinyurl.com/y7sw88tf)
 
 ```
 # Alle Parteien in Österreich
@@ -284,14 +286,14 @@ SELECT ?item ?itemLabel
 WHERE {
   ?item wdt:P31 wd:Q7278;
         wdt:P17 wd:Q40.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de" }
 }
 ```
 [Link](http://tinyurl.com/y92a7r9v)
 
 ### Wahlen
 
-INFOS
+Sammlung an Wikidata Items und Properties rund um Wahlen.
 
 **Items und Properties**
 
@@ -327,7 +329,7 @@ SELECT ?item ?itemLabel
 WHERE {
   ?item wdt:P31 wd:Q22268901;
         wdt:P17 wd:Q40.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de" }
 }
 ```
 [Link](http://tinyurl.com/y9w3evhl)
