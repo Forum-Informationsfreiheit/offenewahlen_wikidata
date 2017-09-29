@@ -76,7 +76,7 @@ data = {
 
 ## Österreich
 
-Generll lassen sich einige Informationen auf [offenewahlen.at](http://offenewahlen.at) finden.
+Generell lassen sich einige Informationen auf [offenewahlen.at](http://offenewahlen.at) finden.
 
 Der Nationalrat besteht in Österreich aus 183 Nationalratsabgeordneten.
 
@@ -344,10 +344,12 @@ WHERE {
 
 ### Daten
 
-- [EveryPolitician](http://everypolitician.org/)
 - [Parlament](https://www.parlament.gv.at/WWER/NR/)
+- [data.gv.at](http://data.gv.at/)
+- [EveryPolitician](http://everypolitician.org/)
 - [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
 - [Meine Abgeordneten](https://www.meineabgeordneten.at/)
+- [Parteispende](http://parteispende.at/)
 - [Wikidata:EveryPolitician](https://www.wikidata.org/w/index.php?title=Wikidata:EveryPolitician)
 
 
