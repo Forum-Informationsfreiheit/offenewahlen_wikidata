@@ -92,8 +92,15 @@ First we will do our first edit in Wikidata, as we look for informations about p
   * create/update entries
   * show status of austrian parties in wikidata again ([SPARQL query](http://tinyurl.com/yaup9za9)
 * Introduction into SPARQL
-  * [query.wikidata.org](https://query.wikidata.org/)
-  * [Help](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
+  * RDF
+    * knowledge in subject–predicate–object triples
+  * Queries
+    * Items and Properties
+  * Find more
+    * [query.wikidata.org](https://query.wikidata.org/)
+    * [Examples](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
+    * [Find Properties](https://www.wikidata.org/wiki/Wikidata:List_of_properties)
+    * [Help](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
 * Introduction to the API
   * General
     * What is an API
