@@ -44,7 +44,7 @@ Stefan Kasberger and Sonja Fischbauer
 
 ### Introduction Wikidata
 
-Jean-Frédéric Berthelot
+Tobias Schönberg
 
 Introduction into the world of Wikidata.
 
@@ -65,12 +65,15 @@ Introduction into data around elections and the status quo of Wikidata in electi
   * [Wahl-Daten-Party](http://offenewahlen.at/termine/wahl-daten-party/)
   * [Mitmachen](http://offenewahlen.at/mitmachen)
   * [#NRW17-Visualisierung](https://github.com/OKFNat/offenewahlen-nrw17/wiki)
+  * [Newsletter](http://offenewahlen.at/newsletter)
 
 ### Workshop
 
 #### Beginners
 
-For total beginners in Wikidata and election data.
+Tobias Schönberg and Simeona Cruz.
+
+Fo beginners in both, Wikidata and election data.
 
 #### Advanced
 
@@ -83,27 +86,41 @@ First we will do our first edit in Wikidata, as we look for informations about p
   * show austrian party register [Spreadsheet](https://docs.google.com/spreadsheets/d/1plpcBuIXYEYkjGxXZYkGq2gmsxD3-Hm3qyvnif1XzM8/edit#gid=1391613793)
   * do research and create/update party: 
     * look if party already exists
-    * research about party: z. B. website, Twitter, name, short-name, creation data, color, wikipedia url, 
+    * research about party: e. g. website, Twitter, name, short-name, creation data, color, wikipedia url, 
+    * document sources in etherpad
   * Talk about experience
   * create/update entries
+  * show status of austrian parties in wikidata again ([SPARQL query](http://tinyurl.com/yaup9za9)
 * Introduction into SPARQL
   * [query.wikidata.org](https://query.wikidata.org/)
   * [Help](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
 * Introduction to the API
-  * [Help](https://www.wikidata.org/w/api.php)
-  * [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php)
+  * General
+    * What is an API
+    * [Wikidata API](https://www.wikidata.org/w/api.php)
+    * [Wikibase API](https://www.mediawiki.org/wiki/Wikibase/API)
+    * Limitations: account with at least 4 days of age and at least 50 edits
+    * Login: Username and password
   * [WikidataIntegrator](https://github.com/SuLab/WikidataIntegrator): Python tool for the API
+    * developed by life-science researchers
+    * 1. Login
+    * 2. Prepare data: create an object for each entry
+    * 3. Write all objects to the logged-in instance
+  * [Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot)
+  * [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php)
+  * other Tools ([External tools](https://www.wikidata.org/wiki/Wikidata:Tools/External_tools/de), [Tools Directory](https://tools.wmflabs.org/hay/directory/#/search/wikidata))
 * Discussion --> Document in [Etherpad](http://pad.okfn.org/p/OffeneWahlenAT-Wikidata)
   * Which Data should be in and which sources do you know?
   * Use-Cases for Wikidata around elections: ideas?
   * Unique Identifiers: Problems, chances, paths toward it?
+  * What are you interested in?
   * **IMPORTANT:** What should be done next / most important data?
 
 ### Conclusion
 
 * Feedback round
 * Sum Up
-* Invite [NRW17-Visualisierung]() und [Wahl-Daten-Party]()
+* Join [NRW17-Visualisierung](https://github.com/OKFNat/offenewahlen-nrw17/wiki) and [Wahl-Daten-Party](http://offenewahlen.at/termine/wahl-daten-party/)
 * Good Bye
 
 
