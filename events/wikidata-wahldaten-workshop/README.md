@@ -52,10 +52,14 @@ Introduction into the world of Wikidata.
 
 Stefan Kasberger
 
-Introduce into data around elections and the status quo of Wikidata in election related data.
+Introduction into data around elections and the status quo of Wikidata in election related data. We will learn what kind of data is created around elections, how the status quo of election data in wikidata is and what we do at #OffeneWahlen AT.
 
-* Data: [Meine Abgeordnete](http://meineabgeordneten.at/), [data.gv.at](http://data.gv.at/), [BMI](http://www.bmi.gv.at/412/), [Offenes Parlament](http://offenesparlament.at/), [Parteispende.at](http://parteispende.at/), [Neuwal](http://neuwal.com/), [EveryPolitician](http://everypolitician.org/), [weitere Resourcen](http://offenewahlen.at/ressourcen) 
-* [Bundespräsident Van der Bellen](https://www.wikidata.org/wiki/Q78869)
+* Election data: [Meine Abgeordnete](http://meineabgeordneten.at/), [data.gv.at](http://data.gv.at/), [BMI](http://www.bmi.gv.at/412/), [Offenes Parlament](http://offenesparlament.at/), [Parteispende.at](http://parteispende.at/), [Neuwal](http://neuwal.com/), [EveryPolitician](http://everypolitician.org/), [weitere Resourcen](http://offenewahlen.at/ressourcen)
+* Election data in Wikidata
+  * [Bundespräsident Alexander Van der Bellen (Q78869)](https://www.wikidata.org/wiki/Q78869)
+  * [All austrian parliament members](http://tinyurl.com/yamh7md4) 
+  * [All actual austrian parliament members](http://tinyurl.com/y7k7fh3q) 
+  * Map: [Birthplace of austrian mayors, labeled by gender](http://tinyurl.com/ybq28naf) 
 * [offenewahlen.at](http://offenewahlen.at/)
   * [Forderungen](http://offenewahlen.at/forderungen-v1)
   * [Wahl-Daten-Party](http://offenewahlen.at/termine/wahl-daten-party/)
@@ -72,12 +76,14 @@ For total beginners in Wikidata and election data.
 
 For beginners in Wikidata with some basic experience around elections and/or election data.
 
+First we will do our first edit in Wikidata, as we look for informations about parties and add them. Then we will have a short look into SPARQL (the Wikidata query language) and the Wikidata API. In teh second part we will discuss about problems and the possible future of wikidata around political entities.
+
 * Add a party
   * show status of austrian parties in wikidata ([SPARQL query](http://tinyurl.com/yaup9za9)
   * show austrian party register [Spreadsheet](https://docs.google.com/spreadsheets/d/1plpcBuIXYEYkjGxXZYkGq2gmsxD3-Hm3qyvnif1XzM8/edit#gid=1391613793)
   * do research and create/update party: 
     * look if party already exists
-    * research about party: z. B. website, Twitter, name, short-name, creation data, color, 
+    * research about party: z. B. website, Twitter, name, short-name, creation data, color, wikipedia url, 
   * Talk about experience
   * create/update entries
 * Introduction into SPARQL
