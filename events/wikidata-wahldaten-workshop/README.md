@@ -54,7 +54,7 @@ Stefan Kasberger
 
 Introduce into data around elections and the status quo of Wikidata in election related data.
 
-**Resources**
+* Data: [Meine Abgeordnete](http://meineabgeordneten.at/), [data.gv.at](http://data.gv.at/), [BMI](http://www.bmi.gv.at/412/), [Offenes Parlament](http://offenesparlament.at/), [Parteispende.at](http://parteispende.at/), [Neuwal](http://neuwal.com/), [EveryPolitician](http://everypolitician.org/), [weitere Resourcen](http://offenewahlen.at/ressourcen) 
 * [Bundespräsident Van der Bellen](https://www.wikidata.org/wiki/Q78869)
 * [offenewahlen.at](http://offenewahlen.at/)
   * [Forderungen](http://offenewahlen.at/forderungen-v1)
@@ -72,9 +72,21 @@ For total beginners in Wikidata and election data.
 
 For beginners in Wikidata with some basic experience around elections and/or election data.
 
-* Add your own data point: research for non-famous candidate of NRW17 
+* Add a party
+  * show status of austrian parties in wikidata ([SPARQL query](https://query.wikidata.org/#%23 Alle Parteien in Österreich%0ASELECT %3Fitem %3FitemLabel%0AWHERE {%0A %3Fitem wdt%3AP31 wd%3AQ7278%3B%0A wdt%3AP17 wd%3AQ40.%0A SERVICE wikibase%3Alabel { bd%3AserviceParam wikibase%3Alanguage "en" }%0A}))
+  * show austrian party register [Spreadsheet](https://docs.google.com/spreadsheets/d/1plpcBuIXYEYkjGxXZYkGq2gmsxD3-Hm3qyvnif1XzM8/edit#gid=1391613793)
+  * do research and create/update party: 
+    * look if party already exists
+    * research about party: z. B. website, Twitter, name, short-name, creation data, color, 
+  * Talk about experience
+  * create/update entries
 * Introduction into SPARQL
-* Introduction to the API with Python
+  * [query.wikidata.org](https://query.wikidata.org/)
+  * [Help](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
+* Introduction to the API
+  * [Help](https://www.wikidata.org/w/api.php)
+  * [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php)
+  * [WikidataIntegrator](https://github.com/SuLab/WikidataIntegrator): Python tool for the API
 * Discussion --> Document in [Etherpad](http://pad.okfn.org/p/OffeneWahlenAT-Wikidata)
   * Which Data should be in and which sources do you know?
   * Use-Cases for Wikidata around elections: ideas?
