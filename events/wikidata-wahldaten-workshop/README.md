@@ -59,12 +59,11 @@ Introduce into data around elections and the status quo of Wikidata in election 
 
 **Resources**
 * [Bundespräsident Van der Bellen](https://www.wikidata.org/wiki/Q78869)
-* [offenewahlen.at](http://offenewahlen.at/]
+* [offenewahlen.at](http://offenewahlen.at/)
   * [Wahl-Daten-Party](http://offenewahlen.at/termine/wahl-daten-party/)
   * [Mitmachen](http://offenewahlen.at/mitmachen)
   * [#NRW17.Visualisierung](https://github.com/OKFNat/offenewahlen-nrw17/wiki)
   * [Forderungen](http://offenewahlen.at/forderungen-v1)
-* []()
 
 ### Workshop
 
