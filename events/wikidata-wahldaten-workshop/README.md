@@ -73,7 +73,7 @@ For total beginners in Wikidata and election data.
 For beginners in Wikidata with some basic experience around elections and/or election data.
 
 * Add a party
-  * show status of austrian parties in wikidata ([SPARQL query](https://query.wikidata.org/#%23 Alle Parteien in Österreich%0ASELECT %3Fitem %3FitemLabel%0AWHERE {%0A %3Fitem wdt%3AP31 wd%3AQ7278%3B%0A wdt%3AP17 wd%3AQ40.%0A SERVICE wikibase%3Alabel { bd%3AserviceParam wikibase%3Alanguage "en" }%0A}))
+  * show status of austrian parties in wikidata ([SPARQL query](http://tinyurl.com/yaup9za9)
   * show austrian party register [Spreadsheet](https://docs.google.com/spreadsheets/d/1plpcBuIXYEYkjGxXZYkGq2gmsxD3-Hm3qyvnif1XzM8/edit#gid=1391613793)
   * do research and create/update party: 
     * look if party already exists
