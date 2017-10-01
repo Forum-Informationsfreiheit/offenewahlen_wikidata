@@ -11,28 +11,18 @@ Wikidata bietet sich als die idealle Datenbank für Informationen zu österreich
 
 ## Mitmachen
 
-* Übersichten erstellen, um den Stand der Daten mitsamt Datenqualität überprüfen zu können
-* Daten manuell in Wikidata eintragen
-	* alles rund um die Nationalratswahlen 2017: Parteien, [Wahl](), KandidatInnen, Wahlsprengel,
-	* Parteizugehörigkeit hinzufügen: sollte auf jeden Fall mit EveryPolitician synchronisiert sein.
-* Daten automatisch via Programmiersprachen in Wikidata eintragen
-	* das EveryPolitician-Import-Script verbessern (`code/everypolitician2wikidata.py`)
-		* Export via [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php) hinzufügen: erstellen der Tabelle für den QuickStatement import.
-		* erstellen eines Wikidata Items, falls Politiker noch nicht angelegt ist hinzufügen.
-		* Import von anderen Ländern aus dem [EveryPolitician Datasets](http://everypolitician.org/) hinzufügen
-		* weitere Daten vom [EveryPolitician Austria Dataset](http://everypolitician.org/austria/	) importieren
-		* Export der Wikidata Items durch vorgefertigte Queries: Mitglieder Nationalrat, Politiker aus AT, etc.
-		* Source der Daten bei Import hinzufügen
-* Sammeln von Werkzeugen, um die Daten zu bearbeiten.
+* [Daten importieren](#daten-importieren)
+  * Übersichten erstellen, um den Stand der Daten mitsamt Datenqualität überprüfen zu können
+* Sammeln von Tools
 * Entwickeln von Anwendungen und Tools
-* Dokumentation verbessern: vor allem wichtige Tipps für EinsteigerInnen wären hilfreich.
-* Tutorials für offenewahlen.at schreiben: speziell zu Eintragungen bzw. Nutzung von Wikidata. Offene Wahlen ist eine GitHub Page und hat dazu ein eigenes ([GitHub Repo](https://github.com/OKFNat/offenewahlen-website)).
-* eine Wikidata Projekt-Seite für AT und Politik anlegen: z. B. Wikidata:WikiProject Austria/Politicians
-* [Wikidata Abfragen](https://query.wikidata.org) verfassen
+* Dokumentation verbessern: vor allem wichtige Tipps für EinsteigerInnen
+* Tutorials schreiben
+* eine Wikidata Projekt-Seite für AT und Politik anlegen: z. B. `Wikidata:WikiProject Austria/Politicians`
+* [Wikidata Abfragen](https://query.wikidata.org) schreiben
 * die Daten nutzen: 
-	* Visualisierungen nutzen
-	* mit anderen Daten kombinieren
-	* Analysen machen
+  * Visualisierungen nutzen
+  * mit anderen Daten kombinieren
+  * Analysen machen
 
 ## Bisherige Aktivitäten
 
