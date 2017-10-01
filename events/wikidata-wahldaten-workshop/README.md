@@ -7,18 +7,15 @@ Location: [Wikimedia Austria Office](http://wikimedia.at/) in Vienna.
 Facilitators
 * [Stefan Kasberger](http://www.stefankasberger.at/)
 * Peter Grassberger
-* Jean-Frédéric Berthelot
 * Simeona Cruz
 * Tobias Schönberg
-* Sonja Fischbauer
 
 ## WORKSHOP
 
-In the workshop, we will introduce to Wikidata and Elections.
+In the workshop, we will introduce to Wikidata through elections.
 
-[Workshop Page](http://offenewahlen.at/termine/wikidata-wahldaten-workshop/)
-
-[GitHub Repository](https://github.com/OKFNat/offenewahlen-wikidata)
+* [Workshop Page](http://offenewahlen.at/termine/wikidata-wahldaten-workshop/)
+* [GitHub Repository](https://github.com/OKFNat/offenewahlen-wikidata)
 
 ### Timetable
 
@@ -39,8 +36,7 @@ Stefan Kasberger and Sonja Fischbauer
 
 * Welcome participants from Open Knowledge Austria and Wikimedia Austria. 
 * Friendly space policy
-* Short introduction round from participants.
-* Register for Wikidata account
+* Short introduction round from participants
 
 ### Introduction Wikidata
 
@@ -53,6 +49,8 @@ Introduction into the world of Wikidata.
 Stefan Kasberger
 
 Introduction into data around elections and the status quo of Wikidata in election related data. We will learn what kind of data is created around elections, how the status quo of election data in wikidata is and what we do at #OffeneWahlen AT.
+
+**[Slides](slides_introduction-elections-wikidata.pdf)**
 
 * Election data: [Meine Abgeordnete](http://meineabgeordneten.at/), [data.gv.at](http://data.gv.at/), [BMI](http://www.bmi.gv.at/412/), [Offenes Parlament](http://offenesparlament.at/), [Parteispende.at](http://parteispende.at/), [Neuwal](http://neuwal.com/), [EveryPolitician](http://everypolitician.org/), [weitere Resourcen](http://offenewahlen.at/ressourcen)
 * Election data in Wikidata
@@ -79,18 +77,18 @@ Fo beginners in both, Wikidata and election data.
 
 For beginners in Wikidata with some basic experience around elections and/or election data.
 
-First we will do our first edit in Wikidata, as we look for informations about parties and add them. Then we will have a short look into SPARQL (the Wikidata query language) and the Wikidata API. In teh second part we will discuss about problems and the possible future of wikidata around political entities.
+First we will do our first edit in Wikidata, as we look for informations about parties and add them. Then we will have a short look into SPARQL (the Wikidata query language) and the Wikidata API. In the second part we will discuss about problems and the possible future of wikidata around political entities.
 
+* Register Wikidata account
 * Add a party
-  * show status of austrian parties in wikidata ([SPARQL query](http://tinyurl.com/yaup9za9)
-  * show austrian party register [Spreadsheet](https://docs.google.com/spreadsheets/d/1plpcBuIXYEYkjGxXZYkGq2gmsxD3-Hm3qyvnif1XzM8/edit#gid=1391613793)
-  * do research and create/update party: 
-    * look if party already exists
-    * research about party: e. g. website, Twitter, name, short-name, creation data, color, wikipedia url, 
-    * document sources in etherpad
-  * Talk about experience
-  * create/update entries
-  * show status of austrian parties in wikidata again ([SPARQL query](http://tinyurl.com/yaup9za9)
+  * Show status of austrian parties in wikidata ([SPARQL query](http://tinyurl.com/yaup9za9))
+  * Show austrian party register ([Spreadsheet](https://docs.google.com/spreadsheets/d/1plpcBuIXYEYkjGxXZYkGq2gmsxD3-Hm3qyvnif1XzM8/edit#gid=1391613793))
+  * Look if party already exists
+  * Do online research about party: e. g. website, Twitter, name, short-name, creation data, color, wikipedia url, 
+  * Document status with sources if available
+  * Talk about experiences
+  * Create/update entries
+  * Show status of Austrian parties in Wikidata again ([SPARQL query](http://tinyurl.com/yaup9za9))
 * Introduction into SPARQL
   * RDF
     * knowledge in subject–predicate–object triples
@@ -121,7 +119,7 @@ First we will do our first edit in Wikidata, as we look for informations about p
   * Use-Cases for Wikidata around elections: ideas?
   * Unique Identifiers: Problems, chances, paths toward it?
   * What are you interested in?
-  * **IMPORTANT:** What should be done next / most important data?
+  * What should be done next / most important data?
 
 ### Conclusion
 

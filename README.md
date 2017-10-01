@@ -334,6 +334,8 @@ Als aller ersten Schritt sollen möglichst viele frei zugängliche Daten in Wiki
 
 Unter [Wiki: Daten](https://github.com/OKFNat/offenewahlen-at/wiki/Daten) sind diverse Datensets zu finden. Wenn du bei den Imports mithelfen möchtest, [meld dich bitte](http://offenewahlen.at/kontakt).
 
+**Limitations:** Account with at least 4 days of age and at least 50 edits
+
 ## Resources
 
 ### Wikidata
@@ -347,12 +349,17 @@ Unter [Wiki: Daten](https://github.com/OKFNat/offenewahlen-at/wiki/Daten) sind d
 
 * [Wikidata Query Service](http://query.wikidata.org/)
 * [SPARQL Hilfe](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
+* [Examples](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
+* [List of Properties](https://www.wikidata.org/wiki/Wikidata:List_of_properties)
 
 ### Tools
 
 * [WikidataQueryServiceR](https://github.com/bearloga/WikidataQueryServiceR): R wrapper for the Wikidata Query Service.
 * [WikidataR](https://github.com/Ironholds/WikidataR): R wrapper for the Wikidata API.
+* [WikidataIntegrator](https://github.com/SuLab/WikidataIntegrator): Python tool for the API
+* [Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot)
 * [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php)
+* [External tools](https://www.wikidata.org/wiki/Wikidata:Tools/External_tools/de), [Tools Directory](https://tools.wmflabs.org/hay/directory/#/search/wikidata)
 
 
 
