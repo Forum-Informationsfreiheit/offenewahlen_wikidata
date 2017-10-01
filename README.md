@@ -334,26 +334,35 @@ WHERE {
 ```
 [Link](http://tinyurl.com/y9w3evhl)
 
+## Daten importieren
+
+Als aller ersten Schritt sollen möglichst viele frei zugängliche Daten in Wikidata importiert werden. Wir haben vor wie folgt anzufangen:
+
+1. Nationalratsabgeordete von EveryPolitician: Stefan dabei
+2. KandidatInnen NRW17
+3. Parteienregister
+
+Unter [Wiki: Daten](https://github.com/OKFNat/offenewahlen-at/wiki/Daten) sind diverse Datensets zu finden. Wenn du bei den Imports mithelfen möchtest, [meld dich bitte](http://offenewahlen.at/kontakt).
+
 ## Resources
 
-- [Template:Infobox officeholder](https://en.wikipedia.org/wiki/Template:Infobox_officeholder)
-- [Hilfe](https://www.wikidata.org/wiki/Wikidata:Introduction/de)
-- [SPARQL Hilfe](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
-- [Wikidata API](https://www.wikidata.org/w/api.php)
-- [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php)
+### Wikidata
 
-### Daten
+* [wikidata.org](https://www.wikidata.org/)
+* [Wikidata API](https://www.wikidata.org/w/api.php)
+* [Hilfe](https://www.wikidata.org/wiki/Wikidata:Introduction/de)
+* [Template:Infobox officeholder](https://en.wikipedia.org/wiki/Template:Infobox_officeholder)
 
-- [Parlament](https://www.parlament.gv.at/WWER/NR/)
-- [data.gv.at](http://data.gv.at/)
-- [EveryPolitician](http://everypolitician.org/)
-- [Offenes Parlament: Personen](https://offenesparlament.at/personen/XXV/)
-- [Meine Abgeordneten](https://www.meineabgeordneten.at/)
-- [Parteispende](http://parteispende.at/)
-- [Wikidata:EveryPolitician](https://www.wikidata.org/w/index.php?title=Wikidata:EveryPolitician)
+### SPARQL
 
+* [Wikidata Query Service](http://query.wikidata.org/)
+* [SPARQL Hilfe](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
 
+### Tools
 
+* [WikidataQueryServiceR](https://github.com/bearloga/WikidataQueryServiceR): R wrapper for the Wikidata Query Service.
+* [WikidataR](https://github.com/Ironholds/WikidataR): R wrapper for the Wikidata API.
+* [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php)
 
 
 
