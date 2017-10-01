@@ -6,7 +6,7 @@ Location: [Wikimedia Austria Office](http://wikimedia.at/) in Vienna.
 
 Facilitators
 * [Stefan Kasberger](http://www.stefankasberger.at/)
-* Peter Grassberger
+* [Peter Grassberger](http://petergrassberger.com)
 * Simeona Cruz
 * Tobias Schönberg
 
@@ -89,7 +89,7 @@ First we will do our first edit in Wikidata, as we look for informations about p
   * Talk about experiences
   * Create/update entries
   * Show status of Austrian parties in Wikidata again ([SPARQL query](http://tinyurl.com/yaup9za9))
-* Introduction into SPARQL
+* Introduction into SPARQL ([Slides](https://hackmd.io/p/Sk-kcRhoW))
   * RDF
     * knowledge in subject–predicate–object triples
   * Queries
