@@ -281,6 +281,21 @@ WHERE {
 ```
 [Link](http://tinyurl.com/y92a7r9v)
 
+```
+# Alle aktiven Parteien in Österreich
+SELECT ?item ?itemLabel
+WHERE {
+  ?item wdt:P31 wd:Q7278;
+        wdt:P17 wd:Q40.
+  OPTIONAL {
+    ?item wdt:P576 ?abolished
+  }
+  FILTER (!bound(?abolished)).
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de" }
+}
+```
+[Link](http://tinyurl.com/ybkx6g8z)
+
 ### Wahlen
 
 Sammlung an Wikidata Items und Properties rund um Wahlen.
