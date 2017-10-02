@@ -44,6 +44,8 @@ Tobias Schönberg
 
 Introduction into the world of Wikidata.
 
+**[Slides](https://commons.wikimedia.org/wiki/File:Why_Wikidata_is_amazing.pdf)**
+
 ### Introduction Elections and Wikidata
 
 Stefan Kasberger
