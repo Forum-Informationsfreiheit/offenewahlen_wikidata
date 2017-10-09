@@ -34,7 +34,7 @@ In the workshop, we will introduce to Wikidata through elections.
 
 Stefan Kasberger and Sonja Fischbauer
 
-* Welcome participants from Open Knowledge Austria and Wikimedia Austria. 
+* Welcome participants from Open Knowledge Austria and Wikimedia Austria.
 * Friendly space policy
 * Short introduction round from participants
 
@@ -57,9 +57,9 @@ Introduction into data around elections and the status quo of Wikidata in electi
 * Election data: [Meine Abgeordnete](http://meineabgeordneten.at/), [data.gv.at](http://data.gv.at/), [BMI](http://www.bmi.gv.at/412/), [Offenes Parlament](http://offenesparlament.at/), [Parteispende.at](http://parteispende.at/), [Neuwal](http://neuwal.com/), [EveryPolitician](http://everypolitician.org/), [weitere Resourcen](http://offenewahlen.at/ressourcen)
 * Election data in Wikidata
   * [Bundespräsident Alexander Van der Bellen (Q78869)](https://www.wikidata.org/wiki/Q78869)
-  * [All austrian parliament members](http://tinyurl.com/yamh7md4) 
-  * [All actual austrian parliament members](http://tinyurl.com/y7k7fh3q) 
-  * Map: [Birthplace of austrian mayors, labeled by gender](http://tinyurl.com/ybq28naf) 
+  * [All austrian parliament members](http://tinyurl.com/yamh7md4)
+  * [All actual austrian parliament members](http://tinyurl.com/y7k7fh3q)
+  * Map: [Birthplace of austrian mayors, labeled by gender](http://tinyurl.com/ybq28naf)
 * [offenewahlen.at](http://offenewahlen.at/)
   * [Forderungen](http://offenewahlen.at/forderungen-v1)
   * [Wahl-Daten-Party](http://offenewahlen.at/termine/wahl-daten-party/)
@@ -75,6 +75,10 @@ Tobias Schönberg and Simeona Cruz.
 
 Fo beginners in both, Wikidata and election data.
 
+Resources
+* [A Gentle Introduction to Wikidata for Absolute Beginners - including non-techies!](https://www.youtube.com/watch?v=eVrAx3AmUvA)
+* [SPARQL for absolute beginners](https://commons.wikimedia.org/wiki/File:SPARQL_for_absolute_beginners_-_CEE_conference_2017_Warsaw.pdf)
+
 #### Advanced
 
 For beginners in Wikidata with some basic experience around elections and/or election data.
@@ -86,7 +90,7 @@ First we will do our first edit in Wikidata, as we look for informations about p
   * Show status of austrian parties in wikidata ([SPARQL query](http://tinyurl.com/yaup9za9))
   * Show austrian party register ([Spreadsheet](https://docs.google.com/spreadsheets/d/1plpcBuIXYEYkjGxXZYkGq2gmsxD3-Hm3qyvnif1XzM8/edit#gid=1391613793))
   * Look if party already exists
-  * Do online research about party: e. g. website, Twitter, name, short-name, creation data, color, wikipedia url, 
+  * Do online research about party: e. g. website, Twitter, name, short-name, creation data, color, wikipedia url,
   * Document status with sources if available
   * Talk about experiences
   * Create/update entries
@@ -129,6 +133,3 @@ First we will do our first edit in Wikidata, as we look for informations about p
 * Sum Up
 * Join [NRW17-Visualisierung](https://github.com/OKFNat/offenewahlen-nrw17/wiki) and [Wahl-Daten-Party](http://offenewahlen.at/termine/wahl-daten-party/)
 * Good Bye
-
-
-

@@ -19,7 +19,7 @@ Wikidata bietet sich als die idealle Datenbank für Informationen zu österreich
 * Tutorials schreiben
 * eine Wikidata Projekt-Seite für AT und Politik anlegen: z. B. `Wikidata:WikiProject Austria/Politicians`
 * [Wikidata Abfragen](https://query.wikidata.org) schreiben
-* die Daten nutzen: 
+* die Daten nutzen:
   * Visualisierungen nutzen
   * mit anderen Daten kombinieren
   * Analysen machen
@@ -142,7 +142,7 @@ Sammlung an Wikidata Items und Properties rund um PolitikerInnen.
 	- [Wikidata:EveryPolitician/Report:P39/Q2285706](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P39/Q2285706): Position held Report
 	- [Wikidata:EveryPolitician/Contrast Report:Head of Government](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Contrast_Report:Head_of_Government): Head of Government Contrast Report. Vergleicht verschiedene Eintragungen auf Konsistenz.
 	- [Wikidata:EveryPolitician/Report:P1313/P39](https://www.wikidata.org/wiki/Wikidata:EveryPolitician/Report:P1313/P39): Officeholders Report.
-	
+
 
 **Abfragen**
 
@@ -204,7 +204,7 @@ WHERE {
   ?city wdt:P17 wd:Q40. # city in Austria
   ?city wdt:P625 ?coords. # city's coordinates
   ?head wdt:P21 ?gender. # head's gender
-  
+
   # tell the labelling service explicitly which labels to apply
   SERVICE wikibase:label {
     bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de".
@@ -359,6 +359,8 @@ Unter [Wiki: Daten](https://github.com/OKFNat/offenewahlen-at/wiki/Daten) sind d
 * [Wikidata API](https://www.wikidata.org/w/api.php)
 * [Hilfe](https://www.wikidata.org/wiki/Wikidata:Introduction/de)
 * [Template:Infobox officeholder](https://en.wikipedia.org/wiki/Template:Infobox_officeholder)
+* [A Gentle Introduction to Wikidata for Absolute Beginners - including non-techies!](https://www.youtube.com/watch?v=eVrAx3AmUvA)
+* [Wikidata Game](https://tools.wmflabs.org/wikidata-game/#)
 
 ### SPARQL
 
@@ -366,6 +368,7 @@ Unter [Wiki: Daten](https://github.com/OKFNat/offenewahlen-at/wiki/Daten) sind d
 * [SPARQL Hilfe](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
 * [Examples](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
 * [List of Properties](https://www.wikidata.org/wiki/Wikidata:List_of_properties)
+* [SPARQL for absolute beginners](https://commons.wikimedia.org/wiki/File:SPARQL_for_absolute_beginners_-_CEE_conference_2017_Warsaw.pdf)
 
 ### Tools
 
@@ -374,11 +377,5 @@ Unter [Wiki: Daten](https://github.com/OKFNat/offenewahlen-at/wiki/Daten) sind d
 * [WikidataIntegrator](https://github.com/SuLab/WikidataIntegrator): Python tool for the API
 * [Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot)
 * [QuickStatement](https://tools.wmflabs.org/wikidata-todo/quick_statements.php)
-* [External tools](https://www.wikidata.org/wiki/Wikidata:Tools/External_tools/de), [Tools Directory](https://tools.wmflabs.org/hay/directory/#/search/wikidata)
-
-
-
-
-
-
-
+* [External tools](https://www.wikidata.org/wiki/Wikidata:Tools/External_tools/de)
+* [Tools Directory](https://tools.wmflabs.org/hay/directory/#/search/wikidata)
