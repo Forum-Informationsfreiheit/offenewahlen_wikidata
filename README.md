@@ -4,6 +4,7 @@ Wikidata bietet sich als die idealle Datenbank für Informationen zu österreich
 
 * [Wikidata.org](http://wikidata.org/)
 * [SPARQL Query Service](https://query.wikidata.org/)
+* [Project Page on Wikidata for Austrian politics](https://www.wikidata.org/wiki/Wikidata:WikiProject_Politics_Austria)
 
 **[http://offenewahlen.at/](http://offenewahlen.at/)**
 
@@ -17,7 +18,6 @@ Wikidata bietet sich als die idealle Datenbank für Informationen zu österreich
 * Entwickeln von Anwendungen und Tools
 * Dokumentation verbessern: vor allem wichtige Tipps für EinsteigerInnen
 * Tutorials schreiben
-* eine Wikidata Projekt-Seite für AT und Politik anlegen: z. B. `Wikidata:WikiProject Austria/Politicians`
 * [Wikidata Abfragen](https://query.wikidata.org) schreiben
 * die Daten nutzen:
   * Visualisierungen nutzen
