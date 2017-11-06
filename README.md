@@ -1,3 +1,5 @@
+[Well structured political data for the whole world: impossible utopia, or Wikidata at its best?](https://media.ccc.de/v/wikidatacon2017-10035-well_structured_political_data_for_the_whole_world_impossible_utopia_or_wikidata_at_its_best)
+
 # Wikidata und Wahldaten
 
 Wikidata bietet sich als die idealle Datenbank für Informationen zu österreichischen Parteien, Wahlen und PolitikerInnen an - um diese zu sammeln und so auch wieder allen zur verfügung zu stellen. Als ersten Schritt dazu, muss die Datenbasis in Wikidata möglichst gut und komplett sein. Daher sind die meisten Aktivitäten zu Beginn rund um das Eintragen von Daten in Wikidata.
@@ -101,9 +103,14 @@ Sammlung an Wikidata Items und Properties rund um PolitikerInnen.
 	- [Österreich](https://www.wikidata.org/wiki/Q40) (Q40)
 - [öffentliches Amt oder Stellung](https://www.wikidata.org/wiki/Property:P39) (P39)
 	- [Bundeskanzler](https://www.wikidata.org/wiki/Q1006398) (Q1006398)
+	- [Bundesminister](https://www.wikidata.org/wiki/Q1006360) (Q1006360)
 	- [Bundespräsident](https://www.wikidata.org/wiki/Q475658) (Q475658)
 		- [Amtsinhaber](https://www.wikidata.org/wiki/Property:P1308) (P1308)
 	- [Außenminister von Österreich](https://www.wikidata.org/wiki/Q5468294) (Q5468294)
+	- [Bundesminister für Gesundheit](https://www.wikidata.org/wiki/Q24256358) (Q24256358)
+	- [Bundesminister für Inneres](https://www.wikidata.org/wiki/Q23938055) (Q23938055)
+	- [Bundesminister für Forschung und Wissenschaft](https://www.wikidata.org/wiki/Q24256102) (Q24256102)
+	- [Staatssekretär](https://www.wikidata.org/wiki/Q736559) (Q736559)
 	- [Staatssekretär (Österreich)](https://www.wikidata.org/wiki/Q2325273) (Q2325273)
 	- [Bundesobmann der Österreichischen Volkspartei](https://www.wikidata.org/wiki/Q29941061) (Q29941061)
 	- [Bundesparteiobmann der FPÖ](https://www.wikidata.org/wiki/Q24256233) (Q24256233)
@@ -123,6 +130,8 @@ Sammlung an Wikidata Items und Properties rund um PolitikerInnen.
 - [Amtsbezeichnung des Staatsoberhaupts](https://www.wikidata.org/wiki/Property:P1906) (P1906)
 - [Amtsinhaber](https://www.wikidata.org/wiki/Property:P1308) (P1308)
 - [Leiter der Regierung oder Verwaltung](https://www.wikidata.org/wiki/Property:P6) (P6)
+- [berufliche Position](https://www.wikidata.org/wiki/Q4164871) (Q4164871)
+- [Mensch](https://www.wikidata.org/wiki/Q5) (Q5)
 - Wikipedia Seite mit Link (de)
 
 **Beispiele**
