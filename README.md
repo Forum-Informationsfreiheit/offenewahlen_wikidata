@@ -36,16 +36,15 @@ In dieser Datei wurden die relevanten Informationen rund um Wikidata und österr
 
 **Liste an österr. Nationalratsabgeordneten**
 
-Es gibt aktuell 183 Sitze im österr. Nationalrat. Die Sitzverteilung ist aktuell (23. 6. 2017) wie folgt:
+Es gibt aktuell 183 Sitze im österr. Nationalrat. Die Sitzverteilung ist aktuell (27. 5. 2019) wie folgt:
+- ﻿ÖVP 61
 - ﻿SPÖ 52
-- ﻿ÖVP 51
-- ﻿FPÖ 38
-- ﻿GRÜNE 24
-- ﻿NEOS 8
-- ﻿TS 6
-- ﻿Fraktionslos 4
+- ﻿FPÖ 51
+- ﻿NEOS 10
+- ﻿JETZT 7
+- ﻿Fraktionslos 2
 
-Um die Informationslage zu österr. Nationalratsabgeordneten in Wikidata zu verbessern, wurden die Daten von [EveryPolitician](http://everypolitician.org/) mittels dem Python Tool [wikidataintegrator](https://github.com/SuLab/WikidataIntegrator) importiert. Die dabei verwendeten Daten sind in etwas ein Jahr alt (Stand 25. Juni 2017). Das dazu verwendete Script findet sich unter `code/everypolitician2wikidata.py`.
+Um die Informationslage zu österr. Nationalratsabgeordneten in Wikidata zu verbessern, wurden die Daten von [EveryPolitician](http://everypolitician.org/) mittels dem Python Tool [wikidataintegrator](https://github.com/SuLab/WikidataIntegrator) importiert. Die dabei verwendeten Daten sind in etwas zwei Jahre alt (Stand 25. Juni 2017). Das dazu verwendete Script findet sich unter `code/everypolitician2wikidata.py`.
 
 Folgende Datenfelder wurden importiert:
 - `given_name`: Vorname
